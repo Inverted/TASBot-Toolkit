@@ -1,7 +1,6 @@
 import os
 import sys
-
-import bcolors as bcolors
+import bcolors
 import numpy
 from PIL import Image
 
@@ -37,7 +36,6 @@ def get_palette_from_image(path):
     image = Image.open(path)
     image = image.convert('RGB')
     pixels = list(image.getdata())
-
     pixels = numpy.array(pixels).reshape((image.width, image.height, 3))
 
     raw_palette = []
