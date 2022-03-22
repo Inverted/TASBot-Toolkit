@@ -58,7 +58,7 @@ def rgb_to_hex(rgb_color):
 
 if __name__ == '__main__':
     print(f"{bcolors.HEADER}===because==={bcolors.ENDC}")
-    print(f"{bcolors.HEADER}tasBot Eye Color ...{bcolors.ENDC}")
+    print(f"{bcolors.HEADER}tasBot Eye Color Analyzing Uniquified Search Engine{bcolors.ENDC}")
     print(f"{bcolors.HEADER}============={bcolors.ENDC}")
 
     if len(sys.argv) > 1:
