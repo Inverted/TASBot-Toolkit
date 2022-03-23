@@ -16,9 +16,12 @@ def write_palette_to_file(palette, path):
 
     with open(file_path, 'w') as f:
         file = open(file_path, "w")
-        for c in palette:  # prefer this, to show what's added rather than writelines()
-            print(f"{bcolors.OKMSG}Added #{c} to palette{bcolors.ENDC}")
-            file.write(f"{c}\n")
+        for i in range(len(palette)):  # prefer this, to show what's added rather than writelines()
+            print(f"{bcolors.OKMSG}Added #{palette[i]} to palette{bcolors.ENDC}")
+            if i == len(palette) - 1:
+                file.write(f"{palette[i]}")
+            else:
+                file.write(f"{palette[i]}\n")
 
 
 def get_file_name(path):
