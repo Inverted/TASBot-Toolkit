@@ -10,3 +10,6 @@ Program loops over all pixels of the image. Be careful with larges images. Meant
 
 ## Usage
 `because <path to image>`
+
+## Future ideas
+Prevent the color black (`0x000000`) to be added to the palette. Alternatively, the luminance of the color could be calculated first and there could be a threshold, for how dark colors can get.
