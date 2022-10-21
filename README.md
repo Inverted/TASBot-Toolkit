@@ -1,4 +1,4 @@
-To use with https://github.com/R3tr0BoiDX/tasbot_eyes
+**To use with [tasbot_eyes](https://github.com/R3tr0BoiDX/tasbot_eyes)**
 
 ---
 
