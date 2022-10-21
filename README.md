@@ -1,5 +1,5 @@
 # BECAUSE
-## tasBot Eye Color Analyzing Uniquified Search Engine
+## TAS*B*ot *E*ye *C*olor *A*nalyzing *U*niquified *S*earch *E*ngine
 
 To use with https://github.com/R3tr0BoiDX/tasbot_eyes
 
