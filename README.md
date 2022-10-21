@@ -8,7 +8,8 @@ To use with https://github.com/R3tr0BoiDX/tasbot_eyes
 Inject any wished animation into current animation stack. Uses a UDP socket to communicate with TASBots eyes.
 
 ### ⚠️ Attention
-The path to the animation is a path to an animation, that is already stored on TASbot.
+* The path to the animation is a path to an animation, that is already stored locally on TASbot. This tool does NOT transfer any animation files to TASBot. It just plays an already locally present animations on TASBot.
+* **The feature of the TASBot eye software, that could make use of this, is not yet released!**
 
 ## Usage
 `python3 aninj.py [-I] <path on TASBot to animation>`
