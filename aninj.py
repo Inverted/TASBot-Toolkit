@@ -31,7 +31,7 @@ sock.sendto(payload.encode('utf-8'), (IP, PORT_OUT))
 
 # Wait for answer and print out
 data, addr = sock.recvfrom(MAX_DATAGRAM_SIZE)
-print(f"TASBot: {data.decode('utf-8')}")
+print(f"[TASBot]: {data.decode('utf-8')}")
 
 # Close socket
 sock.close()
