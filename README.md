@@ -5,10 +5,10 @@ To use with https://github.com/R3tr0BoiDX/tasbot_eyes
 # AnInj
 ***An**imation **Inj**ector*
 
-Inject any wished animation into the current animation stack. Uses a UDP socket to communicate with TASBots eyes.
+Inject any wished animation into the current animation stack. Uses a UDP socket to communicate with TASBots eyes. Path can be relative or absolute.
 
 ### ⚠️ Attention
-* The path to the animation is a path to an animation, that is already stored locally on TASbot. This tool does **NOT** transfer any animation files to TASBot. It just plays an already locally stored animation on TASBot (relative file paths to the current working directory **the TASBot eye software is running in** should be fine).
+* The path to the animation is a path to an animation, that is already stored locally on TASbot. This tool does **NOT** transfer any animation files to TASBot. It just plays an already locally stored animation on TASBot (relative paths are relative to current working directory **the TASBot eye software is running in**).
 * **The feature of the TASBot eye software, that could make use of this, is not yet released!**
 
 ## Usage
