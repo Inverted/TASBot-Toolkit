@@ -19,7 +19,7 @@ args = parser.parse_args()
 
 # Determine animation mode
 ani_mode = 'I' if args.immediately else 'Q'
-print(ani_mode)
+print(f"[INFO] Requesting to play {args.animation}; Immediately: {str(args.immediately)}")
 
 # Connect to TASBot via UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
