@@ -12,6 +12,8 @@ The path to the animation is a path to an animation, that is already stored on T
 `python3 aninj.py [-I] <path on TASBot to animation>`
 * `-I`: Plays the animation immediately
 
+---
+
 # BECAUSE
 *TAS**B**ot **E**ye **C**olor **A**nalyzing **U**niquified **S**earch **E**ngine*
 
