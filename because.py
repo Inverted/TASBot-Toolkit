@@ -11,7 +11,7 @@ def main(path):
 
 
 def write_palette_to_file(palette, path):
-    file_path = get_file_name(f"{os.path.splitext(path)[0]}.tasbotPalette")
+    file_path = get_file_name(f"{os.path.splitext(path)[0]}.tbp")
     print(f"Write palette to \"{file_path}\"")
 
     with open(file_path, 'w') as f:
