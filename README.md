@@ -8,7 +8,7 @@
 Inject any wished animation into the current animation stack. Uses a UDP socket to communicate with TASBots eyes. Path can be relative or absolute.
 
 ### ⚠️ Attention
-* The path to the animation is a path to an animation, that is already stored locally on TASbot. This tool does **NOT** transfer any animation files to TASBot. It just plays an already locally stored animation on TASBot (relative paths are relative to current working directory **the TASBot eye software is running in**).
+* The path to the animation is a path to an animation, that is already stored locally on TASbot. This tool does **NOT** transfer any animation files to TASBot. It just plays an already locally stored animation on TASBot. Relative paths are relative to current working directory **the TASBot eye software is running in**.
 
 ## Usage
 Adjust the IP in `aninja.py:5` to TASBots one.
