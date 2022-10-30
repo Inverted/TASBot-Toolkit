@@ -1,8 +1,9 @@
 import os
 import sys
-import bcolors
 import numpy
 from PIL import Image
+
+import bcolors
 
 
 def main(path):
