@@ -2,9 +2,9 @@ import argparse
 import socket
 
 # networking
-IP = "127.0.0.1"
+TASBOT_IP = "192.168.2.134"
 PORT_OUT = 8080
-PORT_IN = 8081
+TIMEOUT_DELAY = 1.0
 
 # payload
 MAX_PATH_LENGTH = 4096
@@ -23,15 +23,18 @@ print(f"[INFO] Requesting to play {args.animation}; Immediately: {str(args.immed
 
 # Connect to TASBot via UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.bind((IP, PORT_IN))
+sock.settimeout(TIMEOUT_DELAY)
 
 # Construct and send payload
 payload = f"{ani_mode};{args.animation}"
-sock.sendto(payload.encode('utf-8'), (IP, PORT_OUT))
+sock.sendto(payload.encode('utf-8'), (TASBOT_IP, PORT_OUT))
 
-# Wait for answer and print out
-data, addr = sock.recvfrom(MAX_DATAGRAM_SIZE)
-print(f"[TASBot]: {data.decode('utf-8')}")
+try:
+    # Wait for answer and print out
+    data, addr = sock.recvfrom(MAX_DATAGRAM_SIZE)
+    print(f"[TASBot]: {data.decode('utf-8')}")
+except socket.timeout:
+    print('[ERROR] Request timed out!')
 
 # Close socket
 sock.close()
