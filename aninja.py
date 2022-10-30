@@ -1,15 +1,15 @@
 import argparse
 import socket
 
-# payload
-MAX_PATH_LENGTH = 4096
-MAX_MESSAGE_LENGTH = 64
-MAX_DATAGRAM_SIZE = (MAX_PATH_LENGTH + MAX_MESSAGE_LENGTH)
-
 # networking
 IP = "127.0.0.1"
 PORT_OUT = 8080
 PORT_IN = 8081
+
+# payload
+MAX_PATH_LENGTH = 4096
+MAX_MESSAGE_LENGTH = 64
+MAX_DATAGRAM_SIZE = (MAX_PATH_LENGTH + MAX_MESSAGE_LENGTH)
 
 # Parse arguments
 parser = argparse.ArgumentParser()
