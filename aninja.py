@@ -2,7 +2,7 @@ import argparse
 import socket
 
 # networking
-TASBOT_IP = "192.168.2.134"
+TASBOT_IP = "127.0.0.1"
 PORT_OUT = 8080
 TIMEOUT_DELAY = 1.0
 
