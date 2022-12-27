@@ -3,7 +3,7 @@
 ---
 
 # aNinja
-***An**imation **Inj**ector **A**lpha*
+***An**imation **Inj**ecto***a***r*
 
 Inject any wished animation into the current animation stack. Uses a UDP socket to communicate with TASBots eyes. Path can be relative or absolute.
 
